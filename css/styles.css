@@ -150,7 +150,16 @@ main{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 300px;
+    margin:0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main-comision-tables{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 300px;
     margin:0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -163,22 +172,47 @@ main{
     text-align: left;
     
 }
+.main-comision-tables .main-comision--title{
+    margin: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:var(--secondary-blue);
+    text-align: left;
+    
+}
 .main-currency--container{
     display: flex;
+    flex-direction: row;
     width: 90%;
-    min-width: 230px;
+    min-width: 246px;
     max-width: 300px;
     height: 196px;
     margin: 0 auto;
     align-items: center;
 }
-.main-currency--container table{
+
+.main-comision--container{
+    display: flex;
+    width: 90%;
+    min-width: 249px;
+    max-width: 306px;
+    height: 196px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 15px;
+}
+.main-currency--container table,
+.main-comision--container table{
     width: 100%;
     height: 100%;
     padding: 12px;
     
 }
-.main-currency--container td{
+.main-currency--container td,
+.main-comision--container td{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -187,24 +221,29 @@ main{
     border: none;
     color: var(--grey);
 }
-.main-currency--container .table__right{
+.main-currency--container .table__right,
+.main-comision--container .table__right{
     font-size: 1.4rem;
     font-weight: normal;
     list-style: 1.7rem;
     color: var(--soft-grey);
 }
 
-.main-currency--container .table__top-left{
+.main-currency--container .table__top-left,
+.main-comision--container .table__top-left{
     border-radius: 8px 0 0 0;
 }
-.main-currency--container .table__top_right{
+.main-currency--container .table__top_right,
+.main-comision--container .table__top_right{
     border-radius: 0 8px 0 0;
     
 }
-.main-currency--container .table__bottom-left{
+.main-currency--container .table__bottom-left,
+.main-comision--container .table__bottom-left{
     border-radius: 0 0 0 8px;
 }
-.main-currency--container .table__bottom-right{
+.main-currency--container .table__bottom-right,
+.main-comision--container .table__bottom-right{
     border-radius: 0 0 8px 0;
 }
 .main-currency--container  .up  {
@@ -227,14 +266,13 @@ main{
     background-position: center;
     margin-left: 15px;
 }
-.currency-table--arrowright{
-    width: 12px;
-    height: 18px;
-    background-image: url('/Assets/icons/right-arrow.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.fa-solid{
+    font-size: 2rem;
+    color: var(--black);
+    
 }
+
+
 .currency-table--arrowleft{
     width: 12px;
     height: 18px;
@@ -243,6 +281,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 .currency-table--date{
     display: flex;
@@ -255,3 +294,53 @@ main{
     margin: 0 auto;
     
 }
+.comision-table--date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 173px;
+    height: 31px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    margin: 0 auto;
+    
+}
+.product-detail--logo{
+    display: flex;
+    position: relative;
+    left: calc(50% - 42px/2);
+    top: 11px;
+    width: 42px;
+    height: 24px;
+    background-image: url(/Assets/icons/batata.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.main-product-detail{
+    width: 100%;
+    height: auto;
+    background-color: var(--warm-black);
+    padding-top: 26px;
+}
+
+.main-product--title h2{
+    width: 90%;
+    height: 52px;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: var(--just-white);
+    margin: 0 auto;
+}
+.main-product--title p{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: var(--soft-grey);
+    margin-top:24px;
+}
+
