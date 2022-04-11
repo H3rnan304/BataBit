@@ -146,16 +146,46 @@ main{
     color: var(--soft-grey);
     margin: 24px 0;
 }
+.container-tables-slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 930px;
+    min-width: 300px;
+    padding: 0 43px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    
+}
 
-.main-currency-tables,
+.main-currency-tables{
+    display: flex;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 249px;
+    max-width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    margin-right: 60px;
+    font-family: "Inter", sans-serif;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
 .main-comision-tables{
     display: flex;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 235px;
-    max-width: 500px;
+    min-width: 220px;
+    max-width: 300px;
     height: 300px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+    align-content: space-between;
     flex-direction: column;
     align-items: center;
 }
@@ -262,23 +292,9 @@ main{
     background-position: center;
     margin-left: 15px;
 }
-.fa-solid{
-    font-size: 2rem;
-    color: var(--black);
-    
-}
 
 
-.currency-table--arrowleft{
-    width: 12px;
-    height: 18px;
-    background-image: url('/Assets/icons/right-arrow.svg');
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-}
+
 .currency-table--date{
     display: flex;
     flex-direction: column;
@@ -427,12 +443,15 @@ main{
     color: var(--just-white);
     text-align: center;
 }
-.container-tables-slider,
+
 .plans-container--slider{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 930px;
+    min-width: 300px;
     padding: 0 57px;
     height: 316px;
     overflow-x: scroll;
@@ -443,6 +462,8 @@ main{
 .main-plans-container{
     width: 100%;
     min-width: 320px;
+    max-width: 930px;
+    margin: 0 auto;
     padding-bottom: 70px;
     text-align: center;
 }
